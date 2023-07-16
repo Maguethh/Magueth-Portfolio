@@ -1,0 +1,373 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background: #1c223d;
+}
+.container
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bulles
+{
+z-index: -100;
+position: relative;
+display: flex;
+}
+
+.bulles span 
+{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #08b1ff;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #0897da,
+    0 0 50px #08b1ff,
+    0 0 100px #08b1ff;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+}
+.bulles span:nth-child(even)
+{
+    background: #0a6bfc;
+    box-shadow: 0 0 0 10px #0849aa,
+    0 0 50px #0a6bfc,
+    0 0 100px #0a6bfc;
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: translateY(100vh)scale(0);
+    }
+    100%
+    {
+        transofrm: translateY(-10vh) scale(1)
+    }
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+.navigation-bar{
+    position: fixed;
+    width: 100%;
+    right: 0;
+    font-family: 'Quicksand';
+    color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 16px;
+    gap: 40px;
+    padding-right: 30px;
+}
+
+.nav-button{
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.contact-button{
+    border: solid 2px #25cafc;
+    border-radius: 30px;
+    padding: 10 30 10 30;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    transition: 0.3s;
+    color: #25cafc;
+    font-weight: bold;
+}
+
+.contact-button:hover {
+    background-color: #25cafc28;
+}
+
+.introduction-text{
+    width: 40%;
+    margin-left: 250px;
+    margin-top: 230px;
+    font-family: 'Quicksand';
+    color: white;
+}
+
+.intro{
+    font-size: 30px;
+}
+
+.name{
+    font-size: 60px;
+    padding-top: 10px;
+    color: #a6c9ff;
+}
+.profession{
+    font-size: 60px;
+    padding-top: 10px;
+    color: #a6c9ff;
+}
+.bio{
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+.start-button{
+    margin-top: 30px;
+    font-family: 'Quicksand';
+    border: solid 2px #25cafc;
+    border-radius: 30px;
+    padding: 10px 20px;
+    width: 28%;
+    text-align: center;
+    color: #25cafc;
+    transition: 0.3s;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.start-button:hover{
+    background-color: #25cafc28;
+}
+
+ .top-to-bottom {
+ animation: 0.8s top-to-bottom forwards;
+ letter-spacing: -.005em;
+ text-align: left;
+ } 
+@keyframes top-to-bottom {
+ from {
+ transform: translateY(-30px);
+ opacity: 0;
+ }
+ 
+ to {
+ transform: translateY(0);
+ opacity: 1;
+ }
+ }
+
+ .co{
+    height: 100%;
+    background-color: white;
+ }
+
+ .nav-button::after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+.nav-button:hover:after { 
+    width: 100%; 
+    left: 0; }
+
+.diagonal {
+clip-path: polygon(100% 100%, 100% 48.3%, 0% 100%);
+background-color: white;
+height: 100px;
+}
+.diagonal2 {
+    clip-path: polygon(100% 0%, 0% 0%, 0% 100%);
+background-color: white;
+height: 100px;
+
+}
+
+
+.presentation-title{
+    color: #1c223d;
+    text-align: center;
+    font-size: 65px;
+    font-weight: bold;
+    padding: 50px;
+}
+
+.presentation {
+    background-color: white;
+    font-family: 'Quicksand';
+    font-size: 25px;
+    color: #1c223d;
+    height: 100%;
+}
+
+.presentation-text{
+    padding: 25px;
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.projects{
+    background-color: #1c223d;
+    font-family: 'Quicksand';
+    color: white;
+}
+.project-title{
+    width: 100%;
+    text-align: center;
+    font-size: 45px;
+    padding-bottom: 25px;
+}
+
+.project-text{
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.left-project{
+    width: 65%;
+    margin: auto;
+    display: flex;
+flex-direction: row;
+gap: 30px;
+margin-bottom: 10%;
+}
+
+.right-project{
+    width: 65%;
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 30px;
+    margin-bottom: 10%;
+}
+
+.project-gif{
+    height: 100%;
+    width: 50%;
+    border-radius: 30px;
+}
+
+ul {
+    justify-content: space-evenly;
+}
+
+.project-types {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.type {
+    padding: 10 20 10 20px;
+    border: solid 2px white;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.type:hover {
+    background-color: rgba(255, 255, 255, 0.459);
+
+}
+
+.bottom-project{
+    display: flex;
+    flex-direction: row;
+}
+
+.fa-figma {
+    font-size: 35px;
+    height: 100%;
+}
+
+.fa-github {
+    font-size: 35px;
+    height: 100%;
+}
+
+.my-skills {
+    background-color: white;
+    height: 100%;
+    font-family: 'Quicksand';
+}
+
+.skills-title{
+    font-size: 65;
+    text-align: center;
+    color: #1c223d;
+    font-weight: bold;
+    padding-top: 100px;
+    padding-bottom: 50px;
+
+}
+
+.skills-container{
+display: flex;
+text-align: center;
+width: 60%;
+margin: auto;
+flex-wrap: wrap;
+gap: 10px;
+justify-content: center;
+}
+
+.skill-logo{
+    height: 150px;
+}
+
+.logo-name{
+    font-size: 25px;
+}
+
+.contact {
+    height: 30%;
+    background-color: #1c223d;
+    font-family: 'Quicksand';
+}
+
+.contact-title{
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    padding-top: 60px;
+
+}
+
+.mailbutton {
+    color: white;
+    font-size: 20px;
+}
+
+.mail-adress{
+    display: flex;
+    flex-direction: column;
+    border: solid 2px white;
+    border-radius: 60px;
+    width: 20%;
+    margin: auto;
+    padding: 15px;
+}
+
+.mail-text{
+    font-size: 25px;
+}
+
+.contact-text{
+    padding-bottom: 50px;
+}
+
+.mail-adress:hover{
+    cursor: pointer;
+    background-color: #ffffff60;
+    transition: 0.3s;
+}
