@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="script.js">
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="page-accueil">
         <div class="bulles">
             <span style="--i:11;"></span>
             <span style="--i:12;"></span>
@@ -67,12 +67,12 @@
         </div>
         <div class="navigation-bar">
             <ul>
-                <li class="contact-button"">Me contacter <i class="fa-solid fa-envelope fa-bounce" style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; --fa-bounce-rebound: 0;" ></i></i></li>
-                <li class="nav-button">Éxperience</li>
-                <li class="nav-button">Compétences</li>
-                <li class="nav-button">Projets</li>
-                <li class="nav-button">À propos</li>
-                <li class="nav-button">Accueil</li>
+                <li class="contact-button"><a href="#me-contacter">Me contacter <i class="fa-solid fa-envelope fa-bounce" style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; --fa-bounce-rebound: 0;" ></i></a></i></li>
+                <li class="nav-button"><a href="">Éxperience</a></li>
+                <li class="nav-button"><a href="#mes-compétences">Compétences</a></li>
+                <li class="nav-button"><a href="#mes-projets">Projets</a></li>
+                <li class="nav-button"><a href="#a-propos">À propos</a></li>
+                <li class="nav-button"><a href="#page-accueil">Accueil</a></li>
             </ul>
         </div>
 
@@ -81,14 +81,14 @@
             <p class="name top-to-bottom">Magueth Pastor,</p>
             <p class="profession top-to-bottom">Je suis Développeur Web</p>
             <p class="bio top-to-bottom">Jeune développeur web diplômé de 20 ans, passionné par la création et l'innovation. Ouvert à de nouvelles opportunités pour donner vie à des projets web captivants.</p>
-            <p class="start-button top-to-bottom">Décourir mon profil <i class="fa-solid fa-user"></i></p>
+            <p class="start-button top-to-bottom">Découvrir mon profil <i class="fa-solid fa-user"></i></p>
         </div>
     </div>
 
     <div class="diagonal">
     </div>
 
-         <div class="presentation">
+         <div class="presentation" id="a-propos">
 
                 <h1 class="presentation-title">Qui suis-je ?</h1>
 
@@ -103,83 +103,104 @@
 
     <div class="diagonal2">
     </div>
-    <div class="projects">
+    <div class="projects" id="mes-projets">
 
         <div class="left-project">
-            <img src="placeholder.PNG" alt="Un gif d'un projet que j'ai réalisé" class="project-gif">
+            <img src="./images/Projet_Booki.PNG" alt="Un gif d'un projet que j'ai réalisé" class="project-gif">
             <div class="project-description">
-                <h2 class="project-title">PlaceHolder</h2>
-                <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                <h2 class="project-title">Création d'une page d'accueil</h2>
+                <p class="project-text">
+                    J'ai réalisé un projet de page web en reproduisant fidèlement une maquette créée sur Figma. Utilisant HTML et CSS, j'ai traduit chaque élément visuel de la maquette en code en respectant scrupuleusement le design, les couleurs, les polices et les espacements pour obtenir un résultat identique. La page web est parfaitement responsive, s'adaptant de manière fluide à tous les appareils. J'ai également optimisé les performances avec des techniques CSS pour offrir une expérience utilisateur optimale.</p>
 
                 
                 <ul class="project-type">
                     <li class="type">HTML</li>
                     <li class="type">JavaScript</li>    
                     <li class="type">CSS</li>
-                    <li class="asset"><i class="fa-brands fa-github"></i></li>
-                    <li class="asset"><i class="fa-brands fa-figma"></i></li>
+                    <li class="asset"><a href="https://github.com/Maguethh/Projet1-Booki"><i class="fa-brands fa-github"></i></a></li>
+                    <li class="asset"><a href="https://www.figma.com/file/aen32jonHhD7JnIEL2b3sE/ARCHIVED-Maquettes-Booki-(desktop%2C-mobile%2C-tablette)?type=design&t=tNGw8nKsKiggRKu6-6"><i class="fa-brands fa-figma"></i></a></li>
                 </ul>
             </div>
         </div>
 
         
         <div class="right-project">
-            <img src="placeholder.PNG" alt="Un gif d'un projet que j'ai réalisé" class="project-gif">
+            <img src="./images/Projet_Sophie.PNG" alt="Un gif d'un projet que j'ai réalisé" class="project-gif">
             <div class="project-description">
                 
-                <h2 class="project-title">PlaceHolder</h2>
-                <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                <h2 class="project-title">Création d'une page web dynamique</h2>
+                <p class="project-text">J'ai développé un projet de page web dynamique en utilisant JavaScript, HTML et CSS, ainsi que Node.js pour les fonctionnalités côté serveur. Le site comprend une page de login pour l'administrateur sans fonctionnalités de sécurité et des modales permettant de télécharger des médias. L'accent a été mis sur la création d'une interface conviviale et interactive pour les utilisateurs.</p>
 
                 
                 <ul class="project-type">
                     <li class="type">HTML</li>
                     <li class="type">JavaScript</li>    
                     <li class="type">CSS</li>
-                    <li class="asset"><i class="fa-brands fa-github"></i></li>
-                    <li class="asset"><i class="fa-brands fa-figma"></i></li>
+                    <li class="asset"><a href="https://github.com/Maguethh/Projet3-Photographe"><i class="fa-brands fa-github"></i></a></li>
+                    <li class="asset"><a href="https://www.figma.com/proto/kfKHknHySoTibZfdolGAX6?type=design&node-id=0-1&mode=design&t=tNGw8nKsKiggRKu6-6"><i class="fa-brands fa-figma"></i></a></li>
                 </ul>
             </div>
         </div>
         <div class="left-project">
-            <img src="placeholder.PNG" alt="Un gif d'un projet que j'ai réalisé" class="project-gif">
+            <img src="./images/Projet_Nina.PNG" alt="Un gif d'un projet que j'ai réalisé" class="project-gif">
             <div class="project-description">
-                <h2 class="project-title">PlaceHolder</h2>
-                <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                <h2 class="project-title">Débogage d'un site web déjà existant</h2>
+                <p class="project-text">
+                    J'ai participé à un projet de débogage et d'optimisation d'un site web existant, impliquant la correction de bugs, l'amélioration des performances, du référencement SEO et de l'accessibilité. J'ai réussi à optimiser le site en utilisant différentes techniques, ce qui a considérablement amélioré les résultats des tests Lighthouse, passant de 45 à 91 pour les performances, de 68 à 100 pour l'accessibilité, de 83 à 92 pour les bonnes pratiques et de 75 à 100 pour le référencement SEO. J'ai également rédigé un rapport d'intervention détaillé pour présenter les améliorations apportées.</p>
 
                 
                 <ul class="project-type">
                     <li class="type">HTML</li>
                     <li class="type">JavaScript</li>    
                     <li class="type">CSS</li>
-                    <li class="asset"><i class="fa-brands fa-github"></i></li>
-                    <li class="asset"><i class="fa-brands fa-figma"></i></li>
+                    <li class="asset"><a href="https://github.com/Maguethh/Projet5-Nina_Carducci"><i class="fa-brands fa-github"></i></a></li>
                 </ul>
             </div>
         </div>
 
         
         <div class="right-project">
-            <img src="placeholder.PNG" alt="Un gif d'un projet que j'ai réalisé" class="project-gif">
+            <img src="./images/Projet_React.PNG" alt="Un gif d'un projet que j'ai réalisé" class="project-gif">
             <div class="project-description">
                 
-                <h2 class="project-title">PlaceHolder</h2>
-                <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                <h2 class="project-title">Création d'une application react</h2>
+                <p class="project-text">J'ai développé un site de réservation de location de logements en utilisant React. J'ai créé des composants dynamiques et réutilisables pour assurer une architecture modulaire. Les Hooks et l'useState ont été largement utilisés pour gérer l'état de l'application de manière efficace. Grâce à cette approche, j'ai pu créer une interface utilisateur interactive et fluide, permettant aux utilisateurs de rechercher, réserver et gérer leurs réservations de logements en toute simplicité.</p>
 
                 
                 <ul class="project-type">
                     <li class="type">HTML</li>
                     <li class="type">JavaScript</li>    
                     <li class="type">CSS</li>
-                    <li class="asset"><i class="fa-brands fa-github"></i></li>
-                    <li class="asset"><i class="fa-brands fa-figma"></i></li>
+                    <li class="asset"><a href="https://github.com/Maguethh/Projet6-Kasa"><i class="fa-brands fa-github"></i></a></li>
+                    <li class="asset"><a href="https://www.figma.com/file/bAnXDNqRKCRRP8mY2gcb5p/ARCHIVE-UI-Design-Kasa-FR?type=design&t=tNGw8nKsKiggRKu6-6"><i class="fa-brands fa-figma"></i></a></li>
                 </ul>
             </div>
         </div>
+
+        <div class="left-project">
+            <img src="./images/Projet_BackEnd.PNG" alt="Un gif d'un projet que j'ai réalisé" class="project-gif">
+            <div class="project-description">
+                <h2 class="project-title">Création du backend d'un site web</h2>
+                <p class="project-text">Pour ce projet, j'ai développé le backend d'un site web de notation de livres. J'ai utilisé Express pour créer une API RESTful permettant aux utilisateurs de noter les livres et d'accéder aux données. J'ai également mis en place un système de notation pour permettre aux utilisateurs de donner leur avis sur les livres. Pour optimiser les performances et le stockage des images, j'ai intégré la bibliothèque Sharp pour le traitement des images. Enfin, j'ai choisi MongoDB comme base de données pour stocker efficacement les informations des livres et des utilisateurs. Grâce à cette solution complète, les utilisateurs peuvent désormais noter et consulter les avis sur les livres en toute simplicité.</p>
+       
+                <ul class="project-type">
+                    <li class="type">HTML</li>
+                    <li class="type">JavaScript</li>    
+                    <li class="type">CSS</li>
+                    <li class="asset"><a href="https://github.com/Maguethh/Projet7-MonVieuxGrimoire"><i class="fa-brands fa-github"></i></a></li>
+                    <li class="asset"><a href="https://www.figma.com/file/Snidyc45xi6qchoOPabMA9/Maquette-Mon-Vieux-Grimoir?type=design&t=tNGw8nKsKiggRKu6-6"><i class="fa-brands fa-figma"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="project-conclusion">
+            Au cours de mon parcours, j'ai eu l'occasion de participer à plusieurs projet de développement agile en utilisant la méthodologie Scrum. Cette expérience m'a permis de développer des compétences en gestion de projet, de collaborer étroitement avec l'équipe et de m'adapter aux changements de manière efficace. De plus, j'ai acquis la capacité de rédiger des rapports d'interventions détaillés pour documenter mes actions et assurer une traçabilité claire des tâches effectuées. En tant que professionnel, je suis également à l'aise pour communiquer et travailler en équipe, ce qui me permet de contribuer positivement à la réussite des projets collaboratifs.</p>
+
         
     </div>
 
     <div class="diagonal"></div>
-    <div class="my-skills">
+    <div class="my-skills" id="mes-compétences">
         <h2 class="skills-title">Récapitulons, quelles sont mes compétences ?</h2>
         <div class="skills-container">
             <div class="logo"><img src="logos/Css.svg" alt="" class="skill-logo"><p class="logo-name">CSS</p></div>
@@ -203,7 +224,7 @@
     
     
 </div>
-<div class="contact">
+<div class="contact" id="me-contacter">
     <div class="contact-title">
         <h2 class="contact-text">Me contacter ?</h2>
         <div class="mail-adress">

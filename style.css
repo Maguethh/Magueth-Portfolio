@@ -73,6 +73,9 @@ ul {
     font-size: 16px;
     gap: 40px;
     padding-right: 30px;
+    background-color: #0000002d;
+    top: 0;
+    padding: 10px;
 }
 
 .nav-button{
@@ -129,13 +132,17 @@ ul {
     font-family: 'Quicksand';
     border: solid 2px #25cafc;
     border-radius: 30px;
-    padding: 10px 20px;
-    width: 28%;
+    padding: 10px;
+    width: 29%;
     text-align: center;
     color: #25cafc;
     transition: 0.3s;
     font-weight: bold;
     cursor: pointer;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .start-button:hover{
@@ -189,9 +196,29 @@ height: 100px;
     clip-path: polygon(100% 0%, 0% 0%, 0% 100%);
 background-color: white;
 height: 100px;
+margin-bottom: 120px;
 
 }
 
+a:link    { color: currentColor; }
+a:visited { color: currentColor; }
+
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
 
 .presentation-title{
     color: #1c223d;
@@ -256,6 +283,8 @@ margin-bottom: 10%;
     height: 100%;
     width: 50%;
     border-radius: 30px;
+    justify-content: center;
+    margin: auto;
 }
 
 ul {
@@ -288,6 +317,10 @@ ul {
 .fa-figma {
     font-size: 35px;
     height: 100%;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 .fa-github {
@@ -370,4 +403,14 @@ justify-content: center;
     cursor: pointer;
     background-color: #ffffff60;
     transition: 0.3s;
+}
+
+.project-conclusion {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    padding: 15px;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 90px;
 }
