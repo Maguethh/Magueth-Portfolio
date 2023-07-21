@@ -63,7 +63,7 @@ ul {
     flex-direction: row-reverse;
   }
 
-.navigation-bar{
+  .navigation-bar {
     position: fixed;
     width: 100%;
     right: 0;
@@ -74,12 +74,17 @@ ul {
     font-size: 16px;
     gap: 40px;
     padding-right: 30px;
-    background-color: #0000002d;
     top: 0;
     padding: 10px;
     z-index: 200;
-    
-}
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navigation-bar.scrolled {
+    background-color: rgba(0, 0, 0, 0.3);   
+  }
+
 
 .nav-button{
     padding: 10px;
@@ -542,6 +547,7 @@ justify-content: center;
     .navigation-bar {
       justify-content: space-evenly;
       width: 100%;
+      flex-direction: column;
     }
 
     .left-project{
@@ -573,6 +579,7 @@ justify-content: center;
     ul{
         flex-direction: row;
         flex-wrap: wrap;
+        padding: 10px;
     }
 
     .nav-button{
@@ -614,10 +621,6 @@ justify-content: center;
         width: 90%;
     }
 
-    .nav-button{
-        height: 33%;
-    }
-  
     .introduction-text {
       width: 85%;
       margin-left: auto;

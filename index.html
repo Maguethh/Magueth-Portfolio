@@ -10,7 +10,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Public+Sans&family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/abc6ee2392.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="script.js">
+    <script>
+        window.addEventListener('scroll', function() {
+        var navbar = document.querySelector('.navigation-bar');
+        var scrollPosition = window.scrollY;
+        var pageAccueilSection = document.getElementById('page-accueil');
+
+        if (scrollPosition > pageAccueilSection.offsetHeight) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+        });
+    </script>
 </head>
 <body>
     <div class="container" id="page-accueil">
