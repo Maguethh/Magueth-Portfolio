@@ -395,14 +395,20 @@ justify-content: center;
     margin: auto;
     padding: 15px;
     margin-bottom: 30px;
+
 }
 
 .mail-text{
     font-size: 25px;
+    width: 100%;
 }
 
 .contact-text{
     padding-bottom: 50px;
+}
+
+.contact-logo{
+    width: 100%;
 }
 
 .mail-adress:hover{
