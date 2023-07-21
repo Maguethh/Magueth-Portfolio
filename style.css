@@ -21,6 +21,7 @@ body{
 z-index: -100;
 position: relative;
 display: flex;
+flex-wrap: wrap;
 }
 
 .bulles span 
@@ -332,7 +333,6 @@ html{
 
 .my-skills {
     background-color: white;
-    height: 100%;
     font-family: 'Quicksand';
 }
 
@@ -417,3 +417,68 @@ justify-content: center;
     padding-bottom: 90px;
 }
 
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+    .introduction-text {
+      margin-left: 150px;
+      margin-top: 180px;
+      width: 55%;
+      background: blue;
+    }
+  
+    .navigation-bar {
+      font-size: 20px;
+    }
+  
+    .presentation-text {
+      width: 70%;
+    }
+  
+    .left-project {
+      width: 80%;
+    }
+  
+    .right-project {
+      width: 80%;
+    }
+  
+    .skills-container {
+      width: 80%;
+    }
+  
+    .mail-adress {
+      width: 50%;
+    }
+  
+    .start-button {
+      width: 36%;
+    }
+  
+    .my-skills {
+      padding: 100px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navigation-bar {
+      justify-content: space-evenly;
+    }
+  
+    .introduction-text {
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+      background: rebeccapurple;
+    }
+  
+    .profession {
+      padding-bottom: 20px;
+    }
+  
+    .bio {
+      padding-bottom: 20px;
+    }
+  
+    .intro {
+      padding-bottom: 15px;
+    }
+  }
