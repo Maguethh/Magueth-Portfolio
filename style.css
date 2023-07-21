@@ -298,6 +298,7 @@ ul {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .type {
@@ -335,6 +336,7 @@ html{
     background-color: white;
     font-family: 'Quicksand';
     padding-bottom: 100px;
+    
 }
 
 .skills-title{
@@ -392,6 +394,7 @@ justify-content: center;
     width: 20%;
     margin: auto;
     padding: 15px;
+    margin-bottom: 30px;
 }
 
 .mail-text{
@@ -418,7 +421,7 @@ justify-content: center;
     padding-bottom: 90px;
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1440px) {
+@media screen and (min-width: 1070px) and (max-width: 1440px) {
     .introduction-text {
       margin-left: 150px;
       margin-top: 180px;
@@ -458,7 +461,7 @@ justify-content: center;
     }
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1000px) {
+  @media screen and (min-width: 768px) and (max-width: 1070px) {
     .introduction-text {
         margin-left: auto;
         margin-top: 100px;
@@ -466,6 +469,12 @@ justify-content: center;
         margin-right: auto;
       }
     
+      .project-title{
+        font-size: 35px;
+      }
+
+
+
       .navigation-bar {
         font-size: 20px;
       }
@@ -476,10 +485,22 @@ justify-content: center;
     
       .left-project {
         width: 80%;
+        margin: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 50px;
       }
     
+      .my-skills{
+        margin-top: -1px;
+      }
+
       .right-project {
         width: 80%;
+        margin: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 50px;
       }
     
       .skills-container {
