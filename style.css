@@ -110,6 +110,7 @@ ul {
     background-color: #25cafc28;
 }
 
+
 .introduction-text{
     width: 40%;
     margin-left: 250px;
@@ -345,6 +346,7 @@ html{
     background-color: white;
     font-family: 'Quicksand';
     padding-bottom: 100px;
+    margin-bottom: -1px;
     
 }
 
@@ -386,9 +388,11 @@ justify-content: center;
     color: white;
     text-align: center;
     font-size: 35px;
-    padding-top: 60px;
+    padding-bottom: 50px;
 
 }
+
+
 
 .mailbutton {
     color: white;
@@ -400,7 +404,7 @@ justify-content: center;
     flex-direction: column;
     border: solid 2px white;
     border-radius: 60px;
-    width: 20%;
+    width: 30%;
     margin: auto;
     padding: 15px;
     margin-bottom: 30px;
