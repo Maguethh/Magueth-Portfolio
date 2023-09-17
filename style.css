@@ -287,6 +287,7 @@ a:active {
     text-align: center;
     font-size: 45px;
     padding-bottom: 25px;
+    overflow: hidden;
 }
 
 .project-text{
@@ -688,5 +689,9 @@ justify-content: center;
 
     .start-button{
         width: 60%;
+    }
+
+    .wip{
+        width: 100%;
     }
   }
