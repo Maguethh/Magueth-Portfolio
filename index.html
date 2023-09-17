@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -13,9 +14,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script>
         window.addEventListener('scroll', function() {
-        var navbar = document.querySelector('.navigation-bar');
-        var scrollPosition = window.scrollY;
-        var pageAccueilSection = document.getElementById('page-accueil');
+        let navbar = document.querySelector('.navigation-bar');
+        let scrollPosition = window.scrollY;
+        let pageAccueilSection = document.getElementById('page-accueil');
 
         if (scrollPosition > pageAccueilSection.offsetHeight) {
             navbar.classList.add('scrolled');
@@ -83,8 +84,8 @@
         </div>
         <div class="navigation-bar">
             <ul>
-                <li class="contact-button"><a href="#me-contacter">Me contacter <i class="fa-solid fa-envelope fa-bounce" style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; --fa-bounce-rebound: 0;" ></i></a></i></li>
-                <li class="nav-button"><a href="">Éxperience</a></li>
+                <li class="nav-button"><a href="#me-contacter">Me contacter <i class="fa-solid fa-envelope fa-bounce" style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; --fa-bounce-rebound: 0;" ></i></a></i></li>
+                <li class="nav-button"><a href="#a-propos">Éxperience</a></li>
                 <li class="nav-button"><a href="#mes-compétences">Compétences</a></li>
                 <li class="nav-button"><a href="#mes-projets">Projets</a></li>
                 <li class="nav-button"><a href="#a-propos">À propos</a></li>
@@ -114,14 +115,49 @@
                     
                 <p class="presentation-text">Mon objectif professionnel à long terme est d'élargir mes compétences dans différents langages de programmation, d'approfondir ma stack technique et d'acquérir de l'expérience dans des projets variés. Je souhaite également partager mes connaissances en formant d'autres jeunes développeurs motivés et passionnés.</p>
                     
-                <p class="presentation-text">Je suis enthousiaste à l'idée de contribuer à des projets stimulants et d'apporter ma créativité, ma rigueur et ma détermination pour relever les défis qui se présentent.</p>
+                <p class="presentation-text plast">Je suis enthousiaste à l'idée de contribuer à des projets stimulants et d'apporter ma créativité, ma rigueur et ma détermination pour relever les défis qui se présentent.</p>
         
             </div>
 
     <div class="diagonal2">
     </div>
     <div class="projects" id="mes-projets">
+        <div class="left-project">
+            <img src="./images/rplace.PNG" alt="Un gif d'un projet que j'ai réalisé" class="project-gif">
+            <div class="project-description">
+                
+                <h2 class="project-title">Création d'un clone de R/Place</h2>
+                <li class="wip">En cours</li>
+                <p class="project-text">Mon projet actuel est un ambitieux clone de r/place, une plateforme collaborative de création artistique qui a fait sensation sur Internet. À l'instar de l'original, mon projet permettra aux utilisateurs de contribuer à une toile virtuelle en plaçant des pixels de couleur. Cette expérience immersive de collaboration en temps réel repose sur des technologies de pointe pour garantir une interaction fluide entre les participants.</p>
 
+                
+                <ul class="project-type">
+                    <li class="type">JavaScript</li>
+                    <li class="type">Express</li>
+                    <li class="type">NodeJS</li>
+                    <li class="type">MongoDB</li>
+                    <li class="asset"><a href="https://github.com/Maguethh/Projet3-Photographe"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="right-project">
+            <img src="./images/ProjetAirbnb.PNG" alt="Un gif d'un projet que j'ai réalisé" class="project-gif">
+            <div class="project-description">
+                
+                <h2 class="project-title">Plateforme de Réservation Inspirée d'Airbnb</h2>
+                <li class="wip">En cours</li>
+                <p class="project-text">Je suis actuellement en train de créer une plateforme de réservation de logements inspirée d'Airbnb, qui utilise des API REST pour gérer l'authentification sécurisée, la publication de logements, une carte interactive basée sur Leaflet, et un système de paiement via Stripe. Ce projet est en cours de création et est régulièrement mis à jour sur mon compte GitHub pour partager les dernières améliorations et fonctionnalités.</p>
+
+                
+                <ul class="project-type">
+                    <li class="type">React</li>
+                    <li class="type">Express</li>
+                    <li class="type">NodeJS</li>
+                    <li class="type">MongoDB</li>
+                    <li class="asset"><a href="https://github.com/Maguethh/Projet3-Photographe"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+            </div>
+        </div>
         <div class="left-project">
             <img src="./images/Projet_Booki.PNG" alt="Un gif d'un projet que j'ai réalisé" class="project-gif">
             <div class="project-description">
@@ -219,7 +255,7 @@
         
     </div>
 
-    <div class="diagonal"></div>
+    <div class="diagonal diagonal3"></div>
     <div class="my-skills" id="mes-compétences">
         <h2 class="skills-title">Récapitulons, quelles sont mes compétences ?</h2>
         <div class="skills-container">
