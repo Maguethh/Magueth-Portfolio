@@ -35,7 +35,7 @@ flex-wrap: wrap;
     box-shadow: 0 0 0 10px #0897da,
     0 0 50px #08b1ff,
     0 0 100px #08b1ff;
-    animation: animate 15s linear infinite;
+    animation: animate 15s linear(0 0%, 1.09 91.18%) infinite;
     animation-duration: calc(125s / var(--i));
 }
 .bulles span:nth-child(even)
