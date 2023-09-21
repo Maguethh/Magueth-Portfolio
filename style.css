@@ -134,14 +134,6 @@ ul {
     color: #a6c9ff;
 }
 
-.contact-form{
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    justify-content: center;
-    margin: auto;
-}
-
 
 .bio{
     font-size: 25px;
@@ -702,5 +694,4 @@ justify-content: center;
     .wip{
         width: 100%;
     }
-
   }
