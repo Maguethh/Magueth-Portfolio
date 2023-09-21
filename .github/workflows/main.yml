@@ -1,0 +1,5 @@
+- name: Configure les secrets
+  env:
+    SMTP_MAIL_KEY: ${{ secrets.SMTP_MAIL_SECRET }}
+  run: |
+    echo "SMTP_MAIL_KEY=$SMTP_MAIL_KEY" >> $GITHUB_ENV
