@@ -12,19 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Public+Sans&family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/abc6ee2392.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script>
-        window.addEventListener('scroll', function() {
-        let navbar = document.querySelector('.navigation-bar');
-        let scrollPosition = window.scrollY;
-        let pageAccueilSection = document.getElementById('page-accueil');
-
-        if (scrollPosition > pageAccueilSection.offsetHeight) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-        });
-    </script>
+    <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 <body>
     <div class="container" id="page-accueil">
@@ -339,6 +328,14 @@
                 </a>
                 <span class="mail-text">Magueth Pastor</span>
             </div>
+
+                <form class="contact-form" onsubmit="sendEmail(); reset(); return false;">
+                    <input type="text" id="name" placeholder="Nom">
+                    <input type="email" placeholder="Adresse mail" id="email">
+                    <input type="text" id="pnumber" placeholder="Numéro de téléphone">
+                    <textarea id="message" rows="4" placeholder="Comment puis-je vous aider ?"></textarea>
+                    <button type="submit">Envoyer</button>
+                </form>
 
     </div>
     
